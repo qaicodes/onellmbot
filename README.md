@@ -1,0 +1,1 @@
+Please generate openapi key and place it under .env to make sure open api accepts the queries
