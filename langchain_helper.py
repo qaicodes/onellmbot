@@ -10,8 +10,8 @@ def generate_petname(pet_animal, pet_color):
     llm = OpenAI(temperature=0.1)
 
     prompt_template_name = PromptTemplate(input_variables=['pet_animal', 'pet_color'],
-                                          template="I have a {pet_animal} which is {pet_color} in color. Suggest me five cool names for my pet") 
-    name_chain = LLMChain(llm=llm, prompt=prompt_template_name)
+                                          template="I have a {pet_animal} which is {pet_color} in color. Suggest me five cool hippie names for my pet") 
+    name_chain = LLMChain(llm=llm, prompt=prompt_template_name, output_key='pet_name')
 
     response = name_chain({'pet_animal': pet_animal, 'pet_color' : pet_color})
 
