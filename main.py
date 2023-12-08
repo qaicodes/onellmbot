@@ -1,3 +1,4 @@
+#!/usr/bin/env python 
 import langchain_helper as lch
 import streamlit as st
 
